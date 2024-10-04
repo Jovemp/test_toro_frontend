@@ -1,0 +1,12 @@
+<div class="flex flex-row justify-between items-center">
+    <img src="assets/image/logo.png" alt="Logo Toro" class="w-32">
+    <div class="flex flex-row space-x-4">
+        <a routerLink="/" class="text-[#5b08a9] font-bold uppercase text-sm hover:text-[#280648]">Home</a>
+        <a routerLink="/orders" class="text-[#5b08a9] font-bold uppercase text-sm hover:text-[#280648]">Ordens</a>
+    </div>
+    <div class="flex flex-col">
+        <span class="text-[#707070] font-normal text-xs">Client: {{ account?.clientId }}</span>
+        <span class="text-[#707070] font-normal text-xs">Saldo: {{ account?.balance | currency:'BRL':'symbol':'1.2-2'
+            }}</span>
+    </div>
+</div>
